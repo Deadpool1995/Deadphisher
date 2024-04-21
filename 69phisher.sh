@@ -2,9 +2,9 @@
 
 
 ##   69phisher 	: 	Automated Phishing Tool
-##   Author 	: 	Akshay 
+##   Author 	: 	Deadpool
 ##   Version 	: 	1.2
-##   Github 	: 	https://github.com/Akshay-Arjun
+##   Github 	: 	https://github.com/Deadpool1995
 ## Modified version of :
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	TAHMID RAYAT 
