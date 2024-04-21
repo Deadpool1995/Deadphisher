@@ -2,9 +2,9 @@
 
 
 ##   69phisher 	: 	Automated Phishing Tool
-##   Author 	: 	Akshay 
+##   Author 	: 	Deadpool
 ##   Version 	: 	1.2
-##   Github 	: 	https://github.com/Akshay-Arjun
+##   Github 	: 	https://github.com/Deadpool1995
 ## Modified version of :
 ##   Zphisher 	: 	Automated Phishing Tool
 ##   Author 	: 	TAHMID RAYAT 
@@ -83,7 +83,7 @@ ${ORANGE}              | |
 ${ORANGE}              |_|   ${RED}Version : 1.2
               
 
-${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Akshay-Arjun ${WHITE}
+${GREEN}[${WHITE}-${Blue}]${CYAN} Tool Created by Deadpool-1995 ${WHITE}
 EOF
 }
         
@@ -92,7 +92,7 @@ banner_small() {
 	cat <<- "EOF"
 			                     ,,
 			     __            o-°°|\_____/)
-			(___()'`; 69phisher \_/|_)     )
+			(___()'`; Deadpool \_/|_)     )
 			/,    /`               \  __  / 
 			\\"--\\                (_/ (_/  		
 		
